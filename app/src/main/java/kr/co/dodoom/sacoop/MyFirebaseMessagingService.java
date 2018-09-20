@@ -60,7 +60,7 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         }
 */
-
+//테스트
         intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         //CompatBuilder를 이용한 알림방식
