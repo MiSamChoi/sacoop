@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "818224367991",
+    "firebase_url": "https://sacoop-1524036994445.firebaseio.com",
+    "project_id": "sacoop-1524036994445",
+    "storage_bucket": "sacoop-1524036994445.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818224367991:android:75a5ba58c01ce569",
+        "android_client_info": {
+          "package_name": "kr.co.dodoom.sacoop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818224367991-bd4dot2uqijv9ekfuqs70bi8fu8t1n2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.dodoom.sacoop",
+            "certificate_hash": "934cf98377eb7081d5f65cb22e1b17b56248adc5"
+          }
+        },
+        {
+          "client_id": "818224367991-89j84dlvdshnobssp0klfvpob2d50ein.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByRKClOe4AESbANtx9Md6CS6cSdUPuHo8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818224367991-89j84dlvdshnobssp0klfvpob2d50ein.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
