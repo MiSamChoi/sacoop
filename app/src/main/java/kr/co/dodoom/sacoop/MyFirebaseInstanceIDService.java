@@ -43,7 +43,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         Log.d(TAG, "gsm/reg = " + token);
         //request
         Request request = new Request.Builder()
-                .url("http://dev.sacoop.kr/gms/reg/"+token)
+                .url("http://www.sacoop.kr/gms/reg/"+token)
                 .post(body)
                 .build();
 

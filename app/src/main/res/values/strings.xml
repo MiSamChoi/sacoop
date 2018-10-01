@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">sacoop</string>
+    <string name="app_name">SACOOP</string>
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="networkmsg">네트워크가 연결되어있지않습니다. 확인후 재접속 바랍니다.</string>
 
+    <string name="exitmsg">SACOOP를 종료하시겠습니까?</string>
+    <string name="exitmsgY">종료</string>
+    <string name="exitmsgN">취소</string>
     <string name="title_activity_splash">SplashActivity</string>
 </resources>
