@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static  int networkYn = 0;
     private static  int backCount = 0;
-    public  String URL_LOAD = "https://8b41fec0.ngrok.io";
+    public  String URL_LOAD = "https://8f53014f.ngrok.io";
     private static final String TYPE_IMAGE = "image/*";
     private static final int INPUT_FILE_REQUEST_CODE = 1;
     private ValueCallback<Uri> mUploadMessage;

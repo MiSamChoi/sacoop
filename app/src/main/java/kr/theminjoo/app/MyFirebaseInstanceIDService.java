@@ -21,8 +21,8 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = MyFirebaseInstanceIDService.class.getSimpleName();
     public static Context mContext;
 
-    String CNT_URL = "https://8b41fec0.ngrok.io/device/cnt/";
-    String REG_URL = "https://8b41fec0.ngrok.io/device/regist/";
+    String CNT_URL = "https://8f53014f.ngrok.io/device/cnt/";
+    String REG_URL = "https://8f53014f.ngrok.io/device/regist/";
 
     private  MainActivity mainActivity;
 

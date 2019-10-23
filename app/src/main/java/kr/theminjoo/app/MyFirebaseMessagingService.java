@@ -39,21 +39,10 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
         String imgurllink = data.get("imgurllink");
         String link = data.get("link");
 
-
-
-        Log.d(TAG, "From: " + title);
-        Log.d(TAG, "Message data payload: " + messagae);
-        Log.d(TAG, "imgurl: " + imgurllink);
-        Log.d(TAG, "link: " + link);
-
-
         MyFirebaseMessagingService.msgCnt ++;
 
         MainActivity.updateIconBadge(this, MyFirebaseMessagingService.msgCnt);
         sendNotification(title, messagae,imgurllink,link);
-
-
-
     }
 
 
@@ -65,7 +54,6 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
 
         Bundle bundle = new Bundle();
         bundle.putString("url", link);
-        Log.d(TAG, "myimgurl:"+link+"/" );
         intent.putExtras(bundle);
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
@@ -87,8 +75,8 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
             //builder.setSmallIcon(R.drawable.ic_launcher_foreground); //mipmap 사용시 Oreo 이상에서 시스템 UI 에러남
-            CharSequence channelName  = "노티페케이션 채널";
-            String description = "오레오 이상을 위한 것임";
+            CharSequence channelName  = "더불어민주당 채널";
+            String description = "";
             int importance = NotificationManager.IMPORTANCE_HIGH;
 
             NotificationChannel channel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName , importance);
@@ -101,8 +89,6 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
         }
 
         if(myimgurl!=null) {
-            //Log.d(TAG, "myimgurl:"+myimgurl+"/" );
-            //Log.d(TAG, "pushtype: bigPicture" );
             //이미지 온라인 링크를 가져와 비트맵으로 바꾼다.
             try {
                 URL url = new URL(myimgurl);
@@ -120,11 +106,7 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
                     .setBigContentTitle(title)
                     .setSummaryText(message));
 
-
-
         }else if(message.length() > 100) {
-
-            Log.d(TAG, "pushtype: BigTextStyle" );
 
             builder.setContentText("아래로 천천히 드래그 하세요.");
             //BigTextStyle
@@ -135,7 +117,6 @@ public class MyFirebaseMessagingService extends com.google.firebase.messaging.Fi
         }else{
 
             builder.setContentTitle(title);
-            Log.d(TAG, "pushtype: message" );
             builder.setContentText(message);
 
         }
